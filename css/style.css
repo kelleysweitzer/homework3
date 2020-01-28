@@ -10,15 +10,18 @@ Make sure to learn what the starter code does!!
 
 body{
   color: black;
-  font-family: sans-serif;
+  font-family: 'Andika', sans-serif;
   font-size: 16px;
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
+  background-image: url("../images/pigeon-background.jpeg");
+  background-color: #DDDDDD;
 }
 
 main{
   margin-bottom: 100px;
+
 }
 
 h1{
@@ -32,33 +35,73 @@ caption{
   margin:5px 0px;
 }
 
-p{}
+p{
+  color: black;
+  font-size: 16px;
+  padding-top: 10px;
 
-a{}
+}
+
+a{
+  color: #C12258;
+  font-size: 16px;
+  text-decoration-line: 1px  #C12258;
+  text-decoration-style: wavy;
+}
+
+a:focus{
+  outline: 2px solid black;
+
+}
 
 table{
     border: 2px solid black;
 }
 
+
+
 .colhead{
   background-color: #7e0820;
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+  text-transform: uppercase;
   color: white;
 }
 
-.rowhead{}
+.rowhead{
+  border: 2px solid black;
+}
+
+tbody > tr:hover{
+  outline: 2px solid black;
+  background-color: rgb(126,8,32);
+  opacity: 0.5;
+
+}
 
 td{
   padding: 15px;
+  text-align: center;
+  border-top: 2px solid black;
+
+
 }
 
-tr{}
+tr:nth-child(odd){
+  background-color: #D1D1D1;
+
+}
 
 *{}
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+ 
+}
 
 footer{
   position:fixed;
+  min-height: 60px;
   left:0px;
   bottom:0px;
   width:100%;
