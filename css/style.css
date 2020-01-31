@@ -38,9 +38,9 @@ caption{
   color: black;
 }
 
-caption a {
+/* caption a {
   color:black;
-}
+} */
 
 p{
   color: black;
@@ -49,10 +49,10 @@ p{
 
 }
 
-a{
-  color: #C12258;
+* a{
+  color: rgb(95, 0, 32);
   font-size: 16px;
-  text-decoration-line: 1px  #C12258;
+  text-decoration-line: 1px  rgb(95, 0, 32);
   text-decoration-style: wavy;
 }
 
@@ -128,11 +128,6 @@ tbody tr:last-child th:first-child{
 tbody tr:last-child {
   border-bottom-right-radius: 15px;
 }
-
-p.datacite a{
-  color:black;
-}
-
 
 footer{
   position:fixed;
