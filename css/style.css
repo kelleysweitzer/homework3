@@ -25,14 +25,21 @@ main{
 }
 
 h1{
-  color: #8000FF;
+  color: black;
   font-size: 2em;
   line-height: 1.5;
   text-align: center;
 }
 
+
+
 caption{
   margin:5px 0px;
+  color: black;
+}
+
+caption a {
+  color:black;
 }
 
 p{
@@ -88,15 +95,22 @@ tr:nth-child(odd){
 
 }
 
+
 *:focus {
   outline: 2px solid black;
 }
 
-tbody tr:hover{
+tr:hover{
   transition: 0.2s;
-  background: rgb(126,8,32);
-  opacity: 0.5;
+  visibility: visible;
+  background: rgba(185, 50, 77, 0.5);
+  /* background-opacity: 0.5; */
   border-radius: 15px;
+}
+
+
+tr:nth-child > td:nth-child {
+  color:black;
 }
 
 thead tr:first-child th:first-child{
@@ -115,7 +129,9 @@ tbody tr:last-child {
   border-bottom-right-radius: 15px;
 }
 
-
+p.datacite a{
+  color:black;
+}
 
 
 footer{
