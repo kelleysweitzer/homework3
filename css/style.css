@@ -10,6 +10,7 @@ Make sure to learn what the starter code does!!
 
 body{
   color: black;
+  position: relative;
   font-family: 'Andika', sans-serif;
   font-size: 16px;
   margin: 1.2em;
@@ -37,7 +38,7 @@ caption{
 p{
   color: black;
   font-size: 16px;
-  padding-top: 10px;
+  padding-top: 10px; 
 
 }
 
@@ -48,21 +49,15 @@ a{
   text-decoration-style: wavy;
 }
 
-a:focus{
-  outline: 2px solid black;
-
-}
-
 table{
 
-    border: 2px solid black;
-    border-radius: 15px;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    
+  border: 2px solid black;
+  border-radius: 15px;
+  border-collapse: separate;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
-
 
 
 .colhead{
@@ -75,29 +70,17 @@ table{
 }
 
 .rowhead{
-  /* border: 2px solid black; */
-/*   
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px; */
+  border-top: 2px solid black; 
   border-collapse: collapse;
 }
 
-tbody > tr:hover{
-  outline: 2px solid black;
-  transition: 0.2s;
-  background-color: rgb(126,8,32);
-  opacity: 0.5;
-  border-radius: 15px;
-  
 
-}
 
 td{
   padding: 15px;
   text-align: center;
+  color:black;
   border-top: 2px solid black;
-
-
 }
 
 tr:nth-child(odd){
@@ -105,13 +88,22 @@ tr:nth-child(odd){
 
 }
 
-*{}
+*:focus {
+  outline: 2px solid black;
+}
+
+tbody tr:hover{
+  transition: 0.2s;
+  background: rgb(126,8,32);
+  opacity: 0.5;
+  border-radius: 15px;
+}
 
 thead tr:first-child th:first-child{
   border-top-left-radius: 15px;
 }
 
-thead tr:first-child th:last-child{
+thead th:last-child{
   border-top-right-radius: 15px;
 }
 
@@ -119,9 +111,12 @@ tbody tr:last-child th:first-child{
   border-bottom-left-radius: 15px;
 }
 
-tbody tr:last-child th:last-child{
+tbody tr:last-child {
   border-bottom-right-radius: 15px;
 }
+
+
+
 
 footer{
   position:fixed;
@@ -130,6 +125,9 @@ footer{
   bottom:0px;
   width:100%;
   background:black;
+}
+
+footer p {
   text-align:center;
-  color: white;
+  color:white;
 }
